@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="content-Type " content="text/html" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible " content="IE=edge" />
+		<meta name="description" content="management products" />
+		<title>Generator_password</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+		<link rel="stylesheet" href="./main.css" type="text/css">
+	</head>
+	<body>
+		<form>
+			<label for="result_input">Result</label>
+			<input type="text" name="result" value="" id="result_input" />
+			<br/>
+			
+			<label for="uppeercase_input">Uppercase</label>
+			<input type="checkbox" name="select_uppercase" value="" id="uppercase_input" />
+			<br/>
+			
+			<label for="lowercase_input">Lowercase</label>
+			<input type="checkbox" name="select_lowercase" value="" id="lowercase_input" />
+			<br/>
+			
+			<label for="numbers_input">Numbers</label>
+			<input type="checkbox" name="select_numbers" value="" id="numbers_input" />
+			<br/>
+			
+			<label for="symbols_input">Symbols</label>
+			<input type="checkbox" name="select_symbols" value="" id="symbols_input" />
+			<br/>
+			
+			<label for="length_input">Length_Characters</label>
+			<input type="number" name="length_input" value="1" min="1" max="100" id="length_input" />
+			<br/>
+			<br/>
+			
+			<button type="button" onclick="generator_password_fun()" id="general_password">General Password</button>
+			<button type="button" onclick="copy_password_fun()" id="copy_password">Copy Password</button>
+			<button type="button" onclick="reset_password_fun()" id="reset_password">Reset Password</button>
+		</form>
+		<script src="main.js" type="text/javascript" language="javascript"></script>
+	</body>
+</html>
